@@ -1,0 +1,130 @@
+#nav a{
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: black;
+}
+#nav a:hover{
+	color: black;
+  	background-color: white;
+}
+header{
+	text-align: left;
+
+	padding-bottom: 50px;
+}
+#company{
+	font-size:400%;
+}
+#top{
+	text-align: center;
+	border-radius: 24px;
+	border: 5px solid lightskyblue;
+	margin-bottom: 50px;
+}
+#name{
+	font-size:300%;
+	font-weight: bold;
+}
+/*Jump image*/
+#jump {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity:0.2;
+  width:50px;
+  height:50px;
+}
+
+#jump:hover {
+  opacity:0.8; /* Add a dark-grey background on hover */
+}
+/*3 columns*/
+.grid-container{
+	display: grid;
+	grid-gap:50px;
+	grid-template-columns: auto auto auto;
+	padding:10px;
+	
+}
+#categories{
+	
+}
+#food{
+	text-align: center;
+	
+}
+#subtotal{
+	max-width:65%;
+}
+#summary{
+	
+
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: powderblue;
+
+}
+/*menu organization*/
+.menuHeading{
+	font-weight: bold;
+	
+	font-size:150%;
+	padding-bottom: 25px;
+}
+.nameClass{
+	font-weight: bold;
+}
+.priceClass{
+	font-style: italic;
+}
+/*category and summary heading*/
+.heading{
+	font-weight: bold;
+	text-align: left;
+	font-size:150%;
+}
+/*Add and subtract images*/
+.imgClass{
+	opacity: 0.5;
+	height: 15px;
+	width: 15px;
+	cursor: pointer;
+}
+.imgClass:hover{
+	opacity: 1;
+}
+input, select{
+	cursor: pointer;
+}
+/*The categories navigation*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: aliceblue;
+}
+li a {
+  display: block;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-left: 5px solid lightskyblue;
+}
+li a:hover{
+  background-color: lightskyblue;
+}
+/*summary table*/
+table{
+	width:300px;
+	border-collapse: collapse;
+	background-color: aliceblue;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 5px solid lightskyblue;
+}

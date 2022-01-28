@@ -1,0 +1,18 @@
+html
+	head
+		title Login
+		link(rel="stylesheet" type="text/css" href="a4.css")
+	body
+		include ../partials/header-loggedout.pug
+		br
+		br
+		h1 Login
+		br
+		span Username:
+		input(type="text" id="username" name="username")
+		br
+		span Password:
+		input(type="password" id="password" name="password")
+		br
+		input(type="submit" value="Submit" onclick="login()")
+		script(src="client-login.js")

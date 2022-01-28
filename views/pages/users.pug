@@ -1,0 +1,25 @@
+html
+	head
+		title Users
+		link(rel="stylesheet" type="text/css" href="a4.css")
+	body
+		if loggedIn
+			include ../partials/header-loggedin.pug
+		else
+			include ../partials/header-loggedout.pug
+		br
+		br
+		h1 Find Users
+		br
+		span Search Name: 
+		input(type="text" id="search")
+		input(type="submit" value="Search" onclick="search()")
+		br
+		br
+		div(id="results")
+			if users
+				each user in users
+					a(href="/users/"+user_id) #{user.username}
+					br
+
+		script(src="client-users.js")

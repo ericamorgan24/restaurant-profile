@@ -1,0 +1,36 @@
+html
+	head
+		title User
+		link(rel="stylesheet" type="text/css" href="../a4.css")
+	body
+		if loggedIn
+			include ../partials/header-loggedin.pug
+		else
+			include ../partials/header-loggedout.pug
+		br
+		br
+		h1 Profile
+		br
+		div Username: #{result.username}
+		if loggedIn && result._id.equals(id)
+			span Privacy:
+				if result.privacy
+					input(type="radio" name="privacy" id="private" checked="true")
+					span Private
+					input(type="radio" name="privacy" id="public")
+					span Public
+					input#save(type="submit" value="Save" onclick="save()")
+				else
+					input(type="radio" name="privacy" id="private")
+					span Private
+					input(type="radio" name="privacy" id="public" checked="true")
+					span Public
+					input#save(type="submit" value="Save" onclick="save()")
+
+		if result.orders.length > 0
+			div Order History:
+			each item in result.orders
+				a(href="/orders/"+item._id) #{item._id}
+				br
+
+		script(src="../client-user.js")

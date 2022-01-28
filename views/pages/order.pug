@@ -1,0 +1,54 @@
+doctype html
+html(lang="en-US")
+	head
+		title Order Page
+		link(rel="stylesheet" type="text/css" href="order.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8")
+
+	body(onload='init()')
+		div(id="topOfPage")
+
+		if loggedIn
+			include ../partials/header-loggedin.pug
+		else
+			include ../partials/header-loggedout.pug
+		br
+		br
+		h1 Order
+		br
+		header
+			div Select Restaurant:
+			select#select
+				option Choose
+				each restaurant in restaurants
+					option #{restaurant.name}
+		div(id="show" style='visibility:hidden')
+			div(id="top")
+				div(id="name")
+				div(id="min")
+				div(id="fee")
+				br
+
+			section(id="menu" class="grid-container")
+				div(id="categories")
+				div(id="food")
+				div(id="summary")
+					div(id="title")
+					table(id="table")
+					div(id="subtotal")
+			div
+				a(href="#topOfPage")
+					img(src="top.png" alt="Top of page" id="jump")
+		script(src="client-order.js")
+
+
+
+
+
+
+
+
+
+
+
+

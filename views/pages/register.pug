@@ -1,0 +1,18 @@
+html
+	head
+		title Register
+		link(rel="stylesheet" type="text/css" href="a4.css")
+	body
+		include ../partials/header-loggedout.pug
+		br
+		br
+		h1 Register
+		br
+		span Username:
+		input(type="text" id="username")
+		br
+		span Password:
+		input(type="password" id="password")
+		br
+		input(type="submit" value="Submit" onclick="register()")
+		script(src="client-register.js")

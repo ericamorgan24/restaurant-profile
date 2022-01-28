@@ -1,0 +1,14 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: powderblue;
+}
+#nav a{
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: black;
+}
+#nav a:hover{
+	color: black;
+  	background-color: white;
+}

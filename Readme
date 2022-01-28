@@ -1,0 +1,20 @@
+Readme
+
+Erica Morgan
+101015691
+
+Instructions:
+- To install all dependencies
+	npm install
+- To initialize database
+	run your mongodb daemon
+	node database-initializer.js
+- To run server
+	node server.js
+
+Design Decisions:
+- I decided to use a folder to hold restaurant information, instead in client/server files, 
+so that there would be less code to go through
+- The database-initializer.js file was modified to include and order property that holds an array of order objects
+so that I could include them in the users page
+

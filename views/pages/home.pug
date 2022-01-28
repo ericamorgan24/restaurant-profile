@@ -1,0 +1,12 @@
+html
+	head
+		title Home
+		link(rel="stylesheet" type="text/css" href="a4.css")
+	body
+		if loggedIn
+			include ../partials/header-loggedin.pug
+		else
+			include ../partials/header-loggedout.pug
+		br
+		br
+		h1 Welcome Home!

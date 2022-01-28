@@ -1,0 +1,28 @@
+html
+	head
+		title Specific Order
+		link(rel="stylesheet" type="text/css" href="../a4.css")
+	body
+		if loggedIn
+			include ../partials/header-loggedin.pug
+		else
+			include ../partials/header-loggedout.pug
+		br
+		br
+		h1 Specific Order
+		br
+		div Username: #{name}
+		br
+		div Restaurant Name: #{result.restaurantName}
+		br
+		div Items and quantities:
+			each item in result.items
+				div #{item.name}: #{item.quantity}
+		br
+		div Subtotal: $#{result.subtotal.toFixed(2)}
+		br
+		div Tax: $#{result.tax.toFixed(2)}
+		br
+		div Delivery Fee: $#{result.fee.toFixed(2)}
+		br
+		div Total: $#{result.total.toFixed(2)}
