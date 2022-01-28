@@ -1,7 +1,7 @@
 Readme
 
-Erica Morgan
-101015691
+Description:
+A database to store user profile and order information. Session support so that users may log in, place orders, and view a history of their orders. Users will also have the option of setting their own profile to private/public, which will limit who can view their order history. Uses MongoDB to store the user profile, order data, and session data. Used Mongoose for database manipulation within Node.js.
 
 Instructions:
 - To install all dependencies
